@@ -34,6 +34,7 @@ namespace UsersAndDepartmentsWebApp
             });
 
             services.AddControllers();
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +46,13 @@ namespace UsersAndDepartmentsWebApp
             }
 
             app.UseHttpsRedirection();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
+            });
 
             app.UseRouting();
 
