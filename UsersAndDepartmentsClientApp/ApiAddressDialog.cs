@@ -31,6 +31,7 @@ namespace UsersAndDepartmentsClientApp
 
             ApiOriginUri = uri;
 
+            DialogResult = DialogResult.OK;
             Close();
         }
     }
