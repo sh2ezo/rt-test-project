@@ -8,6 +8,7 @@ using UsersAndDepartmentsWebApp.Model;
 
 namespace UsersAndDepartmentsWebApp.Controllers
 {
+    [Route("[controller]")]
     public class DepartmentsController : Controller
     {
         private readonly StorageDbContext _db;
