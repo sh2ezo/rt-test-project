@@ -19,6 +19,7 @@ namespace UsersAndDepartmentsModel
         /// Creates a new instance of the <see cref="Department"/>.
         /// </summary>
         /// <param name="id">Unique identifier of the department.</param>
+        [JsonConstructor]
         public Department(int id)
         {
             Id = id;

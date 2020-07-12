@@ -1,4 +1,6 @@
-﻿namespace UsersAndDepartmentsModel
+﻿using System.Text.Json.Serialization;
+
+namespace UsersAndDepartmentsModel
 {
     public class User
     {
@@ -13,6 +15,7 @@
         /// Creates a new instance of the <see cref="User"/>.
         /// </summary>
         /// <param name="id">Unique identifier of the user.</param>
+        [JsonConstructor]
         public User(int id)
         {
             Id = id;
