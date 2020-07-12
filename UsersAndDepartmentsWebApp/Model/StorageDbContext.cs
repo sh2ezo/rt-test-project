@@ -20,12 +20,12 @@ namespace UsersAndDepartmentsWebApp.Model
         /// <summary>
         /// Gets the set of users.
         /// </summary>
-        public DbSet<User> Users { get; }
+        public DbSet<User> Users { get; set; }
 
         /// <summary>
         /// Gets the set of departments.
         /// </summary>
-        public DbSet<Department> Departments { get; }
+        public DbSet<Department> Departments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
