@@ -44,5 +44,14 @@ namespace UsersAndDepartmentsClientApp
         {
             return new Uri($"Department/{departmentId}/Users");
         }
+
+        /// <summary>
+        /// Returns uri to work with users.
+        /// </summary>
+        /// <returns>Uri.</returns>
+        public static Uri GetUsersUri()
+        {
+            return new Uri($"Users");
+        }
     }
 }
