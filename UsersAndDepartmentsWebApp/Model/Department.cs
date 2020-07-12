@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc.Formatters;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace UsersAndDepartmentsWebApp.Model
 {
@@ -39,6 +37,7 @@ namespace UsersAndDepartmentsWebApp.Model
         /// <summary>
         /// Gets users that belong to the department.
         /// </summary>
+        [JsonIgnore]
         public IReadOnlyList<User> Users => _users;
 
         /// <summary>
