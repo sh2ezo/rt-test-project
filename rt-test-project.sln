@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersAndDepartmentsWebApp", "UsersAndDepartmentsWebApp\UsersAndDepartmentsWebApp.csproj", "{BC8C8CCF-3825-480E-A7AA-6811407C0D0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsersAndDepartmentsWebApp", "UsersAndDepartmentsWebApp\UsersAndDepartmentsWebApp.csproj", "{BC8C8CCF-3825-480E-A7AA-6811407C0D0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersAndDepartmentsClientApp", "UsersAndDepartmentsClientApp\UsersAndDepartmentsClientApp.csproj", "{834B32F4-535A-454E-837A-3DBAFAE27AD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsersAndDepartmentsClientApp", "UsersAndDepartmentsClientApp\UsersAndDepartmentsClientApp.csproj", "{834B32F4-535A-454E-837A-3DBAFAE27AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersAndDepartmentsModel", "UsersAndDepartmentsModel\UsersAndDepartmentsModel.csproj", "{8663E38E-4BF2-4865-BB70-FA979D8E4EBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{834B32F4-535A-454E-837A-3DBAFAE27AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{834B32F4-535A-454E-837A-3DBAFAE27AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{834B32F4-535A-454E-837A-3DBAFAE27AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8663E38E-4BF2-4865-BB70-FA979D8E4EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8663E38E-4BF2-4865-BB70-FA979D8E4EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8663E38E-4BF2-4865-BB70-FA979D8E4EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8663E38E-4BF2-4865-BB70-FA979D8E4EBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

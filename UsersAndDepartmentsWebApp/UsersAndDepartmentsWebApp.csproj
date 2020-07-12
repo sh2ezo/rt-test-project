@@ -9,5 +9,9 @@
     <PackageReference Include="microsoft.entityframeworkcore.sqlite" Version="3.1.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UsersAndDepartmentsModel\UsersAndDepartmentsModel.csproj" />
+  </ItemGroup>
+
 
 </Project>

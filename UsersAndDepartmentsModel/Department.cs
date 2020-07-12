@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace UsersAndDepartmentsWebApp.Model
+namespace UsersAndDepartmentsModel
 {
     public class Department
     {

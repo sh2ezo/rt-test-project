@@ -1,4 +1,4 @@
-﻿namespace UsersAndDepartmentsWebApp.Model
+﻿namespace UsersAndDepartmentsModel
 {
     public class User
     {
