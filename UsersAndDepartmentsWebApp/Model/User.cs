@@ -5,6 +5,13 @@
         /// <summary>
         /// Creates a new instance of the <see cref="User"/>.
         /// </summary>
+        public User()
+        {
+        }
+
+        /// <summary>
+        /// Creates a new instance of the <see cref="User"/>.
+        /// </summary>
         /// <param name="id">Unique identifier of the user.</param>
         public User(int id)
         {

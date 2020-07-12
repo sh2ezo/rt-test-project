@@ -13,6 +13,13 @@ namespace UsersAndDepartmentsWebApp.Model
         /// <summary>
         /// Creates a new instance of the <see cref="Department"/>.
         /// </summary>
+        public Department()
+        {
+        }
+
+        /// <summary>
+        /// Creates a new instance of the <see cref="Department"/>.
+        /// </summary>
         /// <param name="id">Unique identifier of the department.</param>
         public Department(int id)
         {
