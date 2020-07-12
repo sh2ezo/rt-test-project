@@ -30,6 +30,8 @@ namespace UsersAndDepartmentsClientApp
             }
 
             ApiOriginUri = uri;
+
+            Close();
         }
     }
 }
