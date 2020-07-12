@@ -30,9 +30,7 @@ namespace UsersAndDepartmentsWebApp
         {
             services.AddDbContext<StorageDbContext>(builder =>
             {
-                var connection = new SqliteConnection("Filename=:memory:");
-
-                builder.UseSqlite(connection);
+                builder.UseSqlite("DataSource=file:memdb1?mode=memory&cache=shared");
             });
 
             services.AddControllers();

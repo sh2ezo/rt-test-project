@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -20,10 +21,19 @@ namespace UsersAndDepartmentsWebApp
             using (var scope = host.Services.CreateScope())
             using (var db = scope.ServiceProvider.GetRequiredService<StorageDbContext>())
             {
-                db.Database.EnsureCreated();
-            }
+                db.Database.OpenConnection();
 
-            host.Run();
+                try
+                {
+                    db.Database.EnsureCreated();
+
+                    host.Run();
+                }
+                finally
+                {
+                    db.Database.CloseConnection();
+                }
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
