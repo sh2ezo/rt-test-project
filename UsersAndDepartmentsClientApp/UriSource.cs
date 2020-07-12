@@ -12,7 +12,7 @@ namespace UsersAndDepartmentsClientApp
         /// <returns>Uri.</returns>
         public static Uri GetDepartmentsUri()
         {
-            return new Uri("Departments");
+            return new Uri("Departments", UriKind.Relative);
         }
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace UsersAndDepartmentsClientApp
         /// <returns>Uri.</returns>
         public static Uri GetDepartmentUsersListUri(int departmentId)
         {
-            return new Uri($"Users?departmentIds={departmentId}");
+            return new Uri($"Users?departmentIds={departmentId}", UriKind.Relative);
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace UsersAndDepartmentsClientApp
         /// <returns>Uri.</returns>
         public static Uri GetDepartmentUri(int departmentId)
         {
-            return new Uri($"Department/{departmentId}");
+            return new Uri($"Department/{departmentId}", UriKind.Relative);
         }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace UsersAndDepartmentsClientApp
         /// <returns>Uri.</returns>
         public static Uri GetDepartmentUsersUri(int departmentId)
         {
-            return new Uri($"Department/{departmentId}/Users");
+            return new Uri($"Department/{departmentId}/Users", UriKind.Relative);
         }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace UsersAndDepartmentsClientApp
         /// <returns>Uri.</returns>
         public static Uri GetUsersUri()
         {
-            return new Uri($"Users");
+            return new Uri($"Users", UriKind.Relative);
         }
     }
 }
