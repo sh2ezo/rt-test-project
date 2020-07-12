@@ -11,6 +11,11 @@ namespace UsersAndDepartmentsClientApp
 {
     internal class RestClient
     {
+        private static readonly JsonSerializerOptions _jsonSerializerOptions = new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+        };
+
         private readonly HttpClient _httpClient;
 
         /// <summary>
@@ -162,7 +167,7 @@ namespace UsersAndDepartmentsClientApp
                 .ReadAsStringAsync()
                 .ConfigureAwait(false);
 
-            return JsonSerializer.Deserialize<T>(jsonText);
+            return JsonSerializer.Deserialize<T>(jsonText, _jsonSerializerOptions);
         }
     }
 }
