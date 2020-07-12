@@ -73,6 +73,7 @@
             this.Text = "Введите адрес API";
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.AcceptButton = btnOk;
 
         }
 
